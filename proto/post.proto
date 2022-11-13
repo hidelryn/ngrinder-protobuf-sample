@@ -1,0 +1,19 @@
+syntax = "proto3";
+package testpackage;
+
+option java_package = "com.example.protos";
+option java_outer_classname = "PostProtos";
+
+message SavePost {
+    string title = 1;
+    string content = 2;
+    string tag = 3;
+}
+
+message ReadPost {
+    int64 id = 1;
+    string nickname = 2;
+    string title = 3;
+    string content = 4;
+    string tag = 5; 
+}
